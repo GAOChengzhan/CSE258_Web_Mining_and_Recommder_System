@@ -1,0 +1,6 @@
+Problem1 Would Read Prediction
+I used two thresholds to predict whether the user would read this book or not. The one is popularity of the book and the other is the maximum similarity 
+between this book and the other books that the user has read before. When reading one line,  whether the popularity of the book surpasses the popularity
+threshold OR the maximum similarity surpass the similarity threshold can result in the predict of 'Would Read'. After a large amount of experiments, the 
+popularity threshold is set to the  top 72 percent popular books in the taining data while the similarity is set to the top 1 percent maximum similarity.
+Problem2 Rating Prediction

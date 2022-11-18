@@ -1,0 +1,12 @@
+Problem1 Would Read Prediction
+I used two thresholds to predict whether the user would read this book or not. The one is the popularity of the book.
+ The other is the maximum similarity between this book and the other books that the user has read before. When 
+reading one line,  whether the popularity of the book surpasses the popularity threshold OR the maximum similarity 
+surpasses the similarity threshold can result in the prediction of 'Would Read'. After a large number of experiments, 
+the popularity threshold is set to the top 72 percent of the most popular books in the training data while the similarity 
+is set to the top 1 percent value of maximum similarity.
+
+Problem2 Rating Prediction
+I've tried several models. Finally, I picked this model Latent Factor Model (with bias only) which performs best on the 
+test set. The optimization progress of this model is simple, the only hyper-parameter is the lambda. I run this model 
+on different lambda ranging from 10 to 1e-5, and find it performs best when lambda is 4.
