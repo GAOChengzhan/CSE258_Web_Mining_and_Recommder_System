@@ -1,0 +1,17 @@
+#     ratings=reviewsPerUser[u]
+#     if len(ratings)<=N+2:
+#         return None
+#     ytrain=[]
+#     Xtrain=[]
+#     for i in range(len(ratings)-N-1):
+#         ytrain.append(ratings[i+N]['rating'])
+#         temp=[]
+#         for j in range(N-1,-1,-1):
+#             temp.append(ratings[i+j]['rating'])
+#         Xtrain.append(temp)
+#     mod = linear_model.ARDRegression()
+# #     print(Xtrain)
+# #     print(ytrain)
+#     mod.fit(Xtrain,ytrain)
+#     coef=mod.coef_
+#     intercept=mod.intercept_
